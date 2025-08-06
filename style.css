@@ -1,0 +1,676 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #676a81;
+    background: #fff;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #6a708e;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: url('C:\Users\U\Desktop\Simu\Image\simu.jpg') no-repeat center center;
+    background-size: cover;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.hero-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* This is where you adjust opacity */
+    z-index: 1;
+}
+
+
+/* Hero Content Styles */
+.hero-content {
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero-content .highlighted-text {
+    color: #FF5733; /* Highlight text color */
+}
+
+.hero-content .subheading {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.hero-content .cta-button {
+    padding: 15px 30px;
+    background-color: #FF5733; /* CTA Button Color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .cta-button:hover {
+    background-color: #D43F21; /* Hover effect color */
+}
+
+/* Hero Image Styles */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* About Me Section */
+/* About Me Section */
+.about {
+    padding: 50px 0 100px;
+    background-color: #f9f9f9;
+}
+
+.single-about-txt h3 {
+    font-size: 18px;
+    color: #3c4258;
+    line-height: 1.8;
+    background: linear-gradient(90deg, #ff7f50, #6a5acd);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.single-about-txt p {
+    font-size: 16px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    border-bottom: 1px solid #999fb3;
+}
+
+.single-about-img img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.single-about-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+}
+
+.single-about-add-info p {
+    font-weight: 300;
+    color: #43485c;
+    font-size: 14px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.single-about-add-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f7f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for each contact section */
+.single-about-add-info:hover {
+    background-color: #e6e6ff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.single-about-add-info h3 {
+    color: #6a50ff;
+    font-size: 18px;
+}
+
+.single-about-add-info p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Adding spacing and better layout to phone/email/website */
+.single-about-add-info:nth-child(1),
+.single-about-add-info:nth-child(2),
+.single-about-add-info:nth-child(3),
+.single-about-add-info:nth-child(4),
+.single-about-add-info:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+/* Additional styles for alignment */
+.single-about-add-info .col-sm-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.single-about-add-info .row {
+    margin-top: 20px;
+}
+
+/* Profile Section for Social Media */
+/* Profile Section */
+
+/* Education Section */
+/* Education Section */
+.education {
+    padding: 50px 0 100px;
+    background-color: #f9fbfd;
+}
+
+.education-horizontal-timeline {
+    padding: 80px 0;
+}
+
+.single-horizontal-timeline {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.single-horizontal-timeline:hover {
+    background-color: #e6e6ff;
+    transform: translateY(-5px);
+}
+
+.single-horizontal-timeline .experience-time {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.single-horizontal-timeline h2 {
+    font-size: 22px;
+    color: #3b5998;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.single-horizontal-timeline h3 {
+    font-size: 18px;
+    color: #6a5acd;
+    font-weight: 500;
+}
+
+.single-horizontal-timeline .timeline-content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.single-horizontal-timeline h4 {
+    font-size: 20px;
+    color: #cf1818;
+    margin-bottom: 10px;
+}
+
+.single-horizontal-timeline h5 {
+    font-size: 16px;
+    color: #999fb3;
+}
+
+.single-horizontal-timeline p {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-horizontal-border {
+    display: flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+
+.timeline-horizontal-border i {
+    font-size: 10px;
+    color: #d92cf9;
+    margin-right: 5px;
+}
+
+span.single-timeline-horizontal {
+    display: inline-block;
+    background: #b2c1ce;
+    height: 1px;
+    width: 380px;
+}
+
+span.single-timeline-horizontal.spacial-horizontal-line {
+    width: 88px;
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 50px 0 100px;
+    background-color: #f9f9f9;
+}
+
+.single-skill-content {
+    padding-top: 50px;
+}
+
+.single-progress-txt {
+    display: flex;
+}
+
+.single-progress-txt h3 {
+    width: 10%;
+    color: #a606c3;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+
+.barWrapper {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.progress {
+    border-radius: 3px;
+    overflow: visible;
+    background: #e6ecf3;
+    height: 8px;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+
+.progress-bar {
+    background: #b636ff;
+    border-radius: 3px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Experience Section */
+/* Experience Section */
+.experience {
+    padding: 50px 0 100px;
+    background-color: #f9fbfd;
+}
+
+.experience-content {
+    padding-top: 100px;
+}
+
+.single-timeline-box {
+    margin-bottom: 75px;
+    background-color: #f5f7f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.single-timeline-box:hover {
+    background-color: #e6e6ff;
+    transform: translateY(-5px);
+}
+
+.experience-time {
+    position: relative;
+}
+
+.experience-time h2 {
+    font-size: 22px;
+    color: #3b5998;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-time h3 {
+    font-size: 18px;
+    color: #6a5acd;
+    font-weight: 500;
+}
+
+.timeline-content {
+    padding-left: 20px;
+}
+
+.timeline-content h4 {
+    font-size: 30px;
+    color: #e8310c;
+    margin-bottom: 10px;
+}
+
+.timeline-content h5 {
+    font-size: 16px;
+    color: #999fb3;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.timeline-horizontal-border {
+    display: flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+
+.timeline-horizontal-border i {
+    font-size: 10px;
+    color: #d92cf9;
+    margin-right: 5px;
+}
+
+span.single-timeline-horizontal {
+    display: inline-block;
+    background: #b2c1ce;
+    height: 1px;
+    width: 380px;
+}
+
+span.single-timeline-horizontal.spacial-horizontal-line {
+    width: 88px;
+}
+
+/* Hobby Section */
+/* Hobbies Section */
+.hobbies {
+    padding: 50px 0 100px;
+    background-color: #f9fbfd;
+}
+
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Tab Navigation */
+.hobby-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hobby-tabs button {
+    background-color: #d92cf9;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.hobby-tabs button:hover {
+    background-color: #9f00ff;
+}
+
+/* Tab Content */
+.hobby-content {
+    display: none;
+}
+
+.hobby-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hobby-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Active Tab Styling */
+.hobby-tabs button.active {
+    background-color: #9f00ff;
+}
+
+
+
+/* Certificates Section */
+.certificates {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    border-left: 5px solid #e74c3c;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.certificate-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* Contact Section */
+/* Section Styling */
+.contact-modern {
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f0f2f5, #d3cce3);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* Title */
+.contact-title h2 {
+  font-size: 36px;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+.contact-title p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Flex container */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Card design */
+.contact-card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #e65100;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+.contact-card a {
+  color: #d84315;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.contact-button {
+  margin-top: 50px;
+}
+
+.contact-button a {
+  padding: 14px 40px;
+  background: #ff5722;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button a:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Friends Section */
+.friends {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.friends .section-heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #6a5acd;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.friends .section-heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Friend Profile Card */
+.single-profile {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #d92cf9;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.single-profile:hover {
+    background-color: #f3e5f5;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Friend's Image */
+.profile-pic img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    border: 2px solid #6a5acd;
+    padding: 5px;
+    margin-bottom: 15px;
+    display: block; /* Ensure the image is displayed */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+
+/* Friend's Name */
+.profile-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #43485c;
+}
+
+/* Portfolio Button */
+.portfolio-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: 2px solid #6a5acd;
+}
+
+.portfolio-link:hover {
+    background-color: #d92cf9;
+    color: #fff;
+}
